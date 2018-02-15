@@ -29,13 +29,12 @@ class User():
 
 class Privileges():
     """Содержит список привилегий"""
-    def __init__(self, privileges=(['add messages', 'delete users', 'ban users'])):
+    def __init__(self, privileges=['add messages', 'delete users', 'ban users']):
         self.privileges = privileges
 
     def show_privileges(self):
         """Выводит сообщение о привилегиях администратора"""
-        print("The Aministrator " + self.first_name.title() + " " + self.last_name.title()
-              + " is allowed to " + ', '.join(self.privileges) + ".")
+        print("The Aministrator " + "is allowed to " + ', '.join(self.privileges) + ".")
 
 
 class Admin(User):
