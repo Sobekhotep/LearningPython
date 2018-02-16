@@ -45,8 +45,8 @@ class ElectricCar(Car):
         print("This car doesn't need a gas tank!")
 
 
-my_tesla_1 = ElectricCar('google', 'waymo', 2017)
-my_tesla_1.battery.get_range()
-my_tesla_1.battery.upgrade_battery()
-my_tesla_1.battery.get_range()
+my_electric_car = ElectricCar('google', 'waymo', 2017)
+my_electric_car.get_range()
+my_electric_car.upgrade_battery()
+my_electric_car.get_range()
 
