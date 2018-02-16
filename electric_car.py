@@ -44,4 +44,3 @@ class ElectricCar(Car):
         """У электромобилей нет бензобака"""
         print("This car doesn't need a gas tank!")
 
-print (__name__)

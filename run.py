@@ -1,4 +1,11 @@
-from users import User
+from users import User, Admin
 
-print (__name__)
 
+def run():
+    admin = Admin('sarah', 'connor', 'female', 42, 'american')
+    admin.show_privileges()
+    admin.describe_user()
+
+
+if __name__ == "__main__":
+    run()

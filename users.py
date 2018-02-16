@@ -27,19 +27,13 @@ class User():
         self.login_attempts = 0
 
 
-class Privileges():
-    """Содержит список привилегий"""
-    def __init__(self, privileges=['add messages', 'delete users', 'ban users']):
+class Admin(User):
+    """Позволяет зарегистрировать администратора"""
+    def __init__(self, first_name, last_name, male, age, nationality, privileges=['add messages', 'delete users', 'ban users']):
+        super().__init__(first_name, last_name, male, age, nationality)
         self.privileges = privileges
 
     def show_privileges(self):
         """Выводит сообщение о привилегиях администратора"""
         print("The Aministrator " + "is allowed to " + ', '.join(self.privileges) + ".")
-
-
-class Admin(User):
-    """Позволяет зарегистрировать администратора"""
-    def __init__(self, first_name, last_name, male, age, nationality):
-        super().__init__(first_name, last_name, male, age, nationality)
-        self.privileges = Privileges()
 
