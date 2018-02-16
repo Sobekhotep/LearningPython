@@ -43,7 +43,3 @@ class Admin(User):
         super().__init__(first_name, last_name, male, age, nationality)
         self.privileges = Privileges()
 
-
-first_admin = Admin('john', 'connor', 'man', 13, 'american')
-first_admin.privileges.show_privileges()
-

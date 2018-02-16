@@ -44,9 +44,4 @@ class ElectricCar(Car):
         """У электромобилей нет бензобака"""
         print("This car doesn't need a gas tank!")
 
-
-my_electric_car = ElectricCar('google', 'waymo', 2017)
-my_electric_car.get_range()
-my_electric_car.upgrade_battery()
-my_electric_car.get_range()
-
+print (__name__)
