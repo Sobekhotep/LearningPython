@@ -1,3 +1,5 @@
+"""This module contains run code, construction name - main"""
+
 from users import User, Admin
 
 
