@@ -1,8 +1,11 @@
 # A module with list of bikes
 
-
 def run():
-    moto = ['ducati', 'bmw', 'honda', 'harley-davidson', 'minsk', 'java']
+    moto = [
+        'ducati', 'bmw', 'honda', 
+        'harley-davidson', 'minsk', 'java'
+        ]
+    
     # trying append, insert, pop methods, else
 
     moto.append('suzuki')
@@ -19,3 +22,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+

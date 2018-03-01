@@ -1,14 +1,10 @@
 def run():
-    count_list = []
+    dict_1 = {1: 'a', 2: 'b', 3: 'c', 4: 'd'}
+    var = dict_1
 
-    for value in range(1, 11):
-        count_list.append(value**3)
+    dict_2 = {'first': 'gagarin', 'second': var, 'third': 3}
 
-    print(count_list)
-
-    count_list_2 = [value for value in range(1, 11)]
-    for value in count_list_2[1:6]:
-        print(value)
+    print(dict_2['second'[1]])
 
 
 if __name__ == "__main__":

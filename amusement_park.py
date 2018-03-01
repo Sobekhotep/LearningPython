@@ -1,5 +1,6 @@
 def run():
     # constructions if/elif/else
+
     age = 64
     if age < 4:
         price = 0
@@ -14,3 +15,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+

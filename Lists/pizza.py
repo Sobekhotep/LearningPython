@@ -1,6 +1,11 @@
 def run():
     # The list that contains type of pizza
-    my_pizza = ['peperoni', 'neapolitan', 'chicago', 'new york style', 'sicilian']
+    my_pizza = [
+        'peperoni', 'neapolitan',
+        'chicago', 'new york style',
+        'sicilian'
+        ]
+
     friend_pizza = my_pizza[:]
     my_pizza.append('italian')
     friend_pizza.append('siberian')
@@ -16,3 +21,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+

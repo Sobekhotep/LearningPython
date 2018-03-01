@@ -1,4 +1,4 @@
-"""This module contains run code, construction name - main"""
+# This module contains run code, construction name - main
 
 from users import User, Admin
 
@@ -11,3 +11,4 @@ def run():
 
 if __name__ == "__main__":
     run()
+
