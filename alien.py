@@ -11,6 +11,7 @@ def run():
     new_points = alien_0['points']
     print("You just earned " + str(new_points) + " points!")
 
+
 if __name__ == "__main__":
     run()
 
