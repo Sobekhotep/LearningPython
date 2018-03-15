@@ -1,10 +1,17 @@
 def run():
     # Moving list elements from first list to second list
 
+    print("Sorry, but there is no Pastrami in menu.")
+
     sandwich_orders = [
-        'Bacon sandwich', 'Bagel toast', 'Baked bean', 'Barbecue',
-        'Butterbrot', 'Cheese', 'Cheesesteak', 'Chicken salad'
+        'Bacon sandwich', 'Pastrami', 'Bagel toast', 'Baked bean', 'Barbecue',
+        'Butterbrot', 'Pastrami', 'Cheese', 'Cheesesteak', 'Chicken salad',
+        'Pastrami', 'Chili burger', 'Pastrami', 'Churrasco', 'Pastrami'
     ]
+
+    # Removing 'Pastrami' from sandwiches_order
+    while 'Pastrami' in sandwich_orders:
+        sandwich_orders.remove('Pastrami')
 
     finished_sandwiches = []
 
