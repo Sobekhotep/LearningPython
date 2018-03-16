@@ -4,28 +4,34 @@ def run():
     print("Sorry, but there is no Pastrami in menu.")
 
     sandwich_orders = [
-        'Bacon sandwich', 'Pastrami', 'Bagel toast', 'Baked bean', 'Barbecue',
-        'Butterbrot', 'Pastrami', 'Cheese', 'Cheesesteak', 'Chicken salad',
-        'Pastrami', 'Chili burger', 'Pastrami', 'Churrasco', 'Pastrami'
+        'Bacon sandwich', 'PASTRAMI', 'Bagel toast', 'Baked bean', 'Barbecue',
+        'Butterbrot', 'pastrami', 'Cheese', 'Cheesesteak', 'Chicken salad',
+        'PastrAMI', 'Chili burger', 'Pastrami', 'Churrasco', 'PAStrami'
     ]
+    formatted_sandwich_orders = []
 
-    # Removing 'Pastrami' from sandwiches_order
-    while 'Pastrami' in sandwich_orders:
-        sandwich_orders.remove('Pastrami')
+    # Formatting elements from sandwiches_order to lower
+    while sandwich_orders:
+        formatted_name = sandwich_orders.pop(0).lower()
+        formatted_sandwich_orders.append(formatted_name)
 
     finished_sandwiches = []
 
-    while sandwich_orders:
+    while formatted_sandwich_orders:
+        # Removing 'pastrami' from formatted_sandwich_order list
+        if 'pastrami' in formatted_sandwich_orders:
+            formatted_sandwich_orders.remove('pastrami')
         # We remove first sandwich in sandwich order list
-        finished_sandwich = sandwich_orders.pop(0)
-        print("I made you " + finished_sandwich + ".")
+        finished_sandwich = formatted_sandwich_orders.pop(0)
+        print("I made you " + finished_sandwich.title() + ".")
 
         # and add them into finished_sandwiches list
         finished_sandwiches.append(finished_sandwich)
 
     print("\nI made you next sandwiches:")
     for sandwich in finished_sandwiches:
-        print("\t" + sandwich)
+        print("\t" + str(1 + finished_sandwiches.index(sandwich)) + ". " +
+              sandwich.title())
 
 
 if __name__ == "__main__":
